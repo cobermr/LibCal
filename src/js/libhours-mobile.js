@@ -24,7 +24,7 @@ jQuery(function($){
 		For example, Annenberg Library's hours page will have this hidden somewhere: <div id="mobile-lid" data-lid="306" style="display:none;"></div>
 		Alternatively, you may hard code the lid here, if you don't want this dynamic multi-calendar functionality. */
 	/* var currentLid = $("#mobile-lid").attr("data-lid"); */
-	var currentLid = 3367;
+	var currentLid = 0;
 
 
 	/** If an LID was found, do the AJAX call. **/
