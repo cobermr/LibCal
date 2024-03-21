@@ -10,20 +10,22 @@ jQuery(function($){
 
 	/************ CONFIGURATION ************/
 	/* Put your iid (Institution ID) here. */
-	var iid = 335; //Penn Libraries
+	var iid = 3367; //Pierce Library
 
 	/* How many weeks do you want? (Can be between 1 and 52.) */
 	var numWeeks = 52;
 
 	/* Where should the calendar be inserted? This should be a div that is displayed only on mobile screens.
 		If the div does not exist yet and you would like to create it with jQuery, feel free to do so here. */
-	var $mobileContainer = $("#holdmobilecalendar");
+	var $mobileContainer = $("#mobileCalendar");
 	/***************************************/
 
 	/* Determine which lid (Library ID) to use. Should be an attribute in a hidden element on the page. 
 		For example, Annenberg Library's hours page will have this hidden somewhere: <div id="mobile-lid" data-lid="306" style="display:none;"></div>
 		Alternatively, you may hard code the lid here, if you don't want this dynamic multi-calendar functionality. */
-	var currentLid = $("#mobile-lid").attr("data-lid");
+	/* var currentLid = $("#mobile-lid").attr("data-lid"); */
+	var currentLid = 3367;
+
 
 	/** If an LID was found, do the AJAX call. **/
 	if (currentLid) {
